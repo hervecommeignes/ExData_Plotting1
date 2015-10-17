@@ -29,6 +29,6 @@ colnames(power) <- c("DateTime", "Date", "Time", "Global_active_power", "Global_
                           "Voltage", "Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3" )
 
 png("plot1.png")
-hist(power[,4], col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)") 
+hist(power$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)") 
 dev.off()
 

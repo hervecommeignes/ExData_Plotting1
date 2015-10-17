@@ -7,7 +7,7 @@ colnames(power) <- c("DateTime", "Date", "Time", "Global_active_power", "Global_
                           "Voltage", "Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3" )
 
 png("plot2.png")
-plot(power[,1], power[,4], pch=".", type="l", xlab="", ylab="Global Active Power (kilowatts)") 
-#with(power, plot("DateTime", "Global_active_power", pch=".", type="l", xlab="", ylab="Global Active Power (kilowatts)") )
+#plot(power[,1], power[,4], pch=".", type="l", xlab="", ylab="Global Active Power (kilowatts)") 
+with(power, plot(DateTime, Global_active_power, pch=".", type="l", xlab="", ylab="Global Active Power (kilowatts)") )
 dev.off()
 
